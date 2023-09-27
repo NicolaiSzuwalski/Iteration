@@ -4,6 +4,22 @@ const numbers = [1, 2, 3, 4, 5];
 console.group("opgave 1");
 // din kode her
 
+opgave1 = document.getElementById('opgave1');
+opgave1.appendChild(document.createElement("h2"));
+
+sum = 0;
+numbers.forEach(function (number){
+    console.log(number);
+    sum = sum += number;
+    opgave1.innerText += " " + number;
+});
+
+console.log('Summen er ' + sum);
+
+
+
+
+
 
 console.groupEnd();
 
@@ -12,6 +28,19 @@ console.groupEnd();
 console.group("opgave 2");
 // din kode her
 
+let opgave2 = document.getElementById('opgave2');
+opgave2.appendChild(document.createElement("h2"));
+
+
+getData().forEach(function (data){
+    console.log(data.name);
+    console.log(data.shortDescription);
+    opgave2.innerText += `Dette er beskrivelsen af mit dyr:  ${data.shortDescription}`;
+});
+
+
+
+
 
 console.groupEnd();
 
@@ -19,6 +48,11 @@ console.groupEnd();
 /* opgave 3 */
 console.group("opgave 3");
 // din kode her
+
+const fetchDummy = fetch(https://dummyjson.com/users)
+
+
+
 
 
 console.groupEnd();
